@@ -1,11 +1,11 @@
 ---
-name: zion-backend-connect-skills
+name: zion-frontend-dev-skill
 description: "Complete integration guide for building custom frontend applications with Zion.app backend-as-a-service. Use when: (1) Building React/TypeScript web apps with Zion backend, (2) Developing WeChat Mini Programs with Zion backend, (3) Setting up GraphQL clients (Apollo Client), (4) Working with database operations, Actionflows, AI Agents, payments, file uploads, (5) Following UI design rules (Organic/Natural style), (6) Deploying to Zeabur platform"
 ---
 
-# Zion Backend Connect Skills
+# Zion Frontend Dev Skill
 
-Complete integration guide for building custom frontend applications with Zion.app ([functorz.com](https://www.functorz.com)) as a backend-as-a-service (BaaS) platform.
+Frontend development guide for building custom applications with Zion.app ([functorz.com](https://www.functorz.com)) as a backend-as-a-service (BaaS).
 
 > **Skill Relationship Note**: This skill works alongside `zion-baas-skill`.
 > - Use `zion-baas-skill` for: developer authentication, CLI tools, Meta API queries, database CRUD rules, Actionflow protocols, AI Agent protocols, third-party API rules, and binary asset upload details.
@@ -13,7 +13,7 @@ Complete integration guide for building custom frontend applications with Zion.a
 
 ## Table of Contents
 
-1. [Zion Backend Architecture](#1-zion-backend-architecture)
+1. [Zion Frontend Architecture](#1-zion-frontend-architecture)
 2. [Payment Processing](#2-payment-processing)
 3. [Development Best Practices](#3-development-best-practices)
 4. [UI Design Rules](#4-ui-design-rules)
@@ -23,7 +23,7 @@ Complete integration guide for building custom frontend applications with Zion.a
 
 ---
 
-# 1. Zion Backend Architecture
+# 1. Zion Frontend Architecture
 
 Zion is a full-stack no-code development platform, but its backend architecture is designed to be used headlessly. This allows building completely custom frontend applications while leveraging Zion as a pure backend-as-a-service (BaaS).
 
