@@ -613,6 +613,18 @@ mutation AuthenticateWithPhoneNumber(
 **问题 3: `Unused variable/import`**
 - **解决**：移除未使用的变量，或使用下划线前缀
 
+**问题 4: 页面空白，仅 title 可见**
+- **原因 1**：`react-router-dom` 的 `Routes` 未包裹在 `BrowserRouter` 中
+- **解决**：在 `main.tsx` 的 `ReactDOM.createRoot().render()` 内包裹 `<BrowserRouter>`
+
+**问题 5: Apollo Client `gql` 解析报错 `Cannot read properties of undefined (reading 'FIELD')`，导致页面空白**
+- **原因**：Vite 对 `graphql` 包的预构建优化不完整
+- **解决**：在 `vite.config.ts` 中添加 `optimizeDeps: { include: ['graphql'] }`，并清除 `node_modules/.vite` 缓存后重启
+
+**问题 6: 文件上传时 `Failed to execute 'digest' on 'SubtleCrypto': Algorithm: Unrecognized name`**
+- **原因**：浏览器 Web Crypto API 不支持 `MD5`
+- **解决**：使用 `spark-md5` 等第三方库替代 `crypto.subtle.digest('MD5', buffer)`
+
 ---
 
 ## 架构决策和安全实践
