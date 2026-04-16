@@ -1,10 +1,10 @@
 # Zion Backend Connect Skill
 
-> **前端集成 Cursor Skill，用于开发基于 Zion（[functorz.com](https://www.functorz.com)）作为后端即服务（BaaS）的自定义前端应用**
+> **前端集成 AI Coding Skill，用于开发基于 Zion（[functorz.com](https://www.functorz.com)）作为后端即服务（BaaS）的自定义前端应用**
 
-本仓库提供一个**前端集成 Cursor Skill**，专注于 AI Coding 工具（推荐 Cursor）构建 Zion 后端驱动的前端应用。后端协议细节（数据库 CRUD、Actionflow、AI Agent 等）请参考配合使用的 [`zion-baas-skill`](https://github.com/timqin-m/zion-baas-skill)。
+本仓库提供一个**前端集成 AI Coding Skill**，适用于 Cursor、Kimi CLI、Trae 等支持 Skill/MDC 协议的 AI 编码工具。后端协议细节（数据库 CRUD、Actionflow、AI Agent 等）请参考配合使用的 [`zion-baas-skill`](https://github.com/timqin-m/zion-baas-skill)。
 
-> **注意**：本仓库适用于 Cursor 2.3.41 及以上版本，使用新的 Skills 系统（`.cursor/skills/` 目录结构）。
+> **注意**：本仓库适用于支持 Skill/MDC 协议的 AI 编码工具。不同工具的技能目录结构可能不同（如 `.cursor/skills/`、`.kimi/skills/` 等），请根据所用工具的要求放置。
 
 ## 🚀 快速安装
 
@@ -70,7 +70,7 @@ npx skills add timqin-m/zion-backend-connect-skill
 
 ## 🛠️ 前置要求
 
-* Cursor 编辑器 2.3.41 及以上版本（支持 Cursor Skills 系统）
+* 支持 Skill/MDC 协议的 AI 编码工具（Cursor、Kimi CLI、Trae 等）
 * Zion（functorz.com）账号和项目
 * 配合使用 [`zion-baas-skill`](https://github.com/timqin-m/zion-baas-skill) 获取后端协议和 CLI 工具支持
 
@@ -85,10 +85,10 @@ npx skills add timqin-m/zion-backend-connect-skill
 * [Apollo Client 文档](https://www.apollographql.com/docs/react/)
 * [GraphQL 最佳实践](https://graphql.org/learn/best-practices/)
 
-### Cursor 和 AI 开发
+### AI 编码工具
 
 * [Cursor 官方文档](https://cursor.sh/docs)
-* [Cursor Skills 最佳实践](https://cursor.sh/docs)
+* [Kimi CLI](https://kimi.moonshot.cn/)
 
 ## 🎯 支持的开发场景
 
